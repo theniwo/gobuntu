@@ -1,0 +1,31 @@
+# Use the official image as a parent image.
+FROM ubuntu:18.04
+
+# Set the working directory.
+WORKDIR /root
+
+# Copy the file from your host to your current location.
+#COPY package.json .
+
+# Run the command inside your image filesystem.
+RUN apt update
+RUN apt -y upgrade
+RUN apt -y install apt-utils
+RUN apt -y install ssh
+# RUN echo "PermitRootLogin yes" >> /etc/ssh/sshd_config
+# RUN echo "PasswordAuthentication yes" >> /etc/ssh/sshd_config
+# RUN echo "PermitEmptyPasswords yes" >> /etc/ssh/sshd_config
+RUN mkdir -p /var/run/sshd
+#RUN service ssh start
+#RUN service ssh status
+# RUN apt -y install byobu >/dev/null
+
+# Inform Docker that the container is listening on the specified port at runtime.
+EXPOSE 22 2222
+
+# Run the specified command within the container.
+# CMD [ "/bin/bash" ]
+
+# Copy the rest of your app's source code from your host to your image filesystem.
+# COPY . .
+ENTRYPOINT ["/usr/sbin/sshd","-o", "PermitRootLogin","-D", "-p", "2222"]

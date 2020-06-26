@@ -1,0 +1,184 @@
+May 17 14:49:44 gobuntu sshd[36]: Server listening on 0.0.0.0 port 22.
+May 17 14:49:44 gobuntu sshd[36]: Server listening on :: port 22.
+May 17 14:51:04 gobuntu sshd[37]: Accepted password for root from 45.87.212.70 port 50080 ssh2
+May 17 14:51:04 gobuntu sshd[37]: pam_unix(sshd:session): session opened for user root by (uid=0)
+May 17 14:51:04 gobuntu sshd[37]: pam_systemd(sshd:session): Failed to connect to system bus: No such file or directory
+May 17 14:51:13 gobuntu passwd[61]: pam_unix(passwd:chauthtok): password changed for root
+May 17 14:51:14 gobuntu sshd[37]: Received disconnect from 45.87.212.70 port 50080:11: disconnected by user
+May 17 14:51:14 gobuntu sshd[37]: Disconnected from user root 45.87.212.70 port 50080
+May 17 14:51:14 gobuntu sshd[37]: pam_unix(sshd:session): session closed for user root
+May 17 14:51:42 gobuntu sshd[62]: Accepted password for root from 192.168.1.25 port 51890 ssh2
+May 17 14:51:42 gobuntu sshd[62]: pam_unix(sshd:session): session opened for user root by (uid=0)
+May 17 14:51:42 gobuntu sshd[62]: pam_systemd(sshd:session): Failed to connect to system bus: No such file or directory
+May 17 14:52:05 gobuntu sshd[440]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.1.4  user=root
+May 17 14:52:06 gobuntu sshd[440]: Failed password for root from 192.168.1.4 port 51372 ssh2
+May 17 14:52:08 gobuntu sshd[440]: Connection closed by authenticating user root 192.168.1.4 port 51372 [preauth]
+May 17 15:08:10 gobuntu sshd[14163]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.1.4  user=root
+May 17 15:08:12 gobuntu sshd[14163]: Failed password for root from 192.168.1.4 port 52434 ssh2
+May 17 15:08:22 gobuntu last message repeated 2 times
+May 17 15:08:22 gobuntu sshd[14163]: Connection closed by authenticating user root 192.168.1.4 port 52434 [preauth]
+May 17 15:08:22 gobuntu sshd[14163]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.1.4  user=root
+May 17 15:08:30 gobuntu sshd[14453]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.1.4  user=root
+May 17 15:08:32 gobuntu sshd[14453]: Failed password for root from 192.168.1.4 port 52448 ssh2
+May 17 15:08:43 gobuntu last message repeated 2 times
+May 17 15:08:43 gobuntu sshd[14453]: Connection closed by authenticating user root 192.168.1.4 port 52448 [preauth]
+May 17 15:08:43 gobuntu sshd[14453]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.1.4  user=root
+May 17 15:08:46 gobuntu sshd[14681]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.1.4  user=root
+May 17 15:08:48 gobuntu sshd[14681]: Failed password for root from 192.168.1.4 port 52462 ssh2
+May 17 15:09:09 gobuntu sshd[14681]: Connection closed by authenticating user root 192.168.1.4 port 52462 [preauth]
+May 17 17:12:39 gobuntu sshd[62]: pam_unix(sshd:session): session closed for user root
+May 17 18:33:07 gobuntu sshd[22882]: Accepted password for root from 192.168.1.25 port 50344 ssh2
+May 17 18:33:07 gobuntu sshd[22882]: pam_unix(sshd:session): session opened for user root by (uid=0)
+May 17 18:33:07 gobuntu sshd[22882]: pam_systemd(sshd:session): Failed to connect to system bus: No such file or directory
+May 17 18:34:11 gobuntu sshd[22882]: Received disconnect from 192.168.1.25 port 50344:11: disconnected by user
+May 17 18:34:11 gobuntu sshd[22882]: Disconnected from user root 192.168.1.25 port 50344
+May 17 18:34:11 gobuntu sshd[22882]: pam_unix(sshd:session): session closed for user root
+May 17 18:36:02 gobuntu sshd[23698]: Accepted password for root from 192.168.1.25 port 50544 ssh2
+May 17 18:36:02 gobuntu sshd[23698]: pam_unix(sshd:session): session opened for user root by (uid=0)
+May 17 18:36:02 gobuntu sshd[23698]: pam_systemd(sshd:session): Failed to connect to system bus: No such file or directory
+May 17 18:36:13 gobuntu sshd[23698]: Received disconnect from 192.168.1.25 port 50544:11: disconnected by user
+May 17 18:36:13 gobuntu sshd[23698]: Disconnected from user root 192.168.1.25 port 50544
+May 17 18:36:13 gobuntu sshd[23698]: pam_unix(sshd:session): session closed for user root
+May 17 19:53:58 gobuntu sshd[23726]: Accepted password for root from 192.168.1.158 port 49920 ssh2
+May 17 19:53:58 gobuntu sshd[23726]: pam_unix(sshd:session): session opened for user root by (uid=0)
+May 17 19:53:58 gobuntu sshd[23726]: pam_systemd(sshd:session): Failed to connect to system bus: No such file or directory
+May 17 19:54:14 gobuntu sshd[23726]: Received disconnect from 192.168.1.158 port 49920:11: disconnected by user
+May 17 19:54:14 gobuntu sshd[23726]: Disconnected from user root 192.168.1.158 port 49920
+May 17 19:54:14 gobuntu sshd[23726]: pam_unix(sshd:session): session closed for user root
+May 18 04:00:59 gobuntu sshd[23989]: Accepted password for root from 192.168.1.159 port 36622 ssh2
+May 18 04:00:59 gobuntu sshd[23989]: pam_unix(sshd:session): session opened for user root by (uid=0)
+May 18 04:00:59 gobuntu sshd[23989]: pam_systemd(sshd:session): Failed to connect to system bus: No such file or directory
+May 18 04:19:39 gobuntu sshd[23989]: pam_unix(sshd:session): session closed for user root
+May 18 07:08:41 gobuntu sshd[7495]: Accepted password for root from 212.8.2.4 port 42616 ssh2
+May 18 07:08:41 gobuntu sshd[7495]: pam_unix(sshd:session): session opened for user root by (uid=0)
+May 18 07:08:41 gobuntu sshd[7495]: pam_systemd(sshd:session): Failed to connect to system bus: No such file or directory
+May 18 07:09:35 gobuntu sshd[7495]: pam_unix(sshd:session): session closed for user root
+May 18 07:09:40 gobuntu sshd[8287]: Connection closed by authenticating user root 212.8.2.4 port 35714 [preauth]
+May 18 07:09:40 gobuntu sshd[8289]: Connection closed by authenticating user root 212.8.2.4 port 65064 [preauth]
+May 18 07:09:42 gobuntu sshd[8291]: Accepted password for root from 212.8.2.4 port 45312 ssh2
+May 18 07:09:42 gobuntu sshd[8291]: pam_unix(sshd:session): session opened for user root by (uid=0)
+May 18 07:09:42 gobuntu sshd[8291]: pam_systemd(sshd:session): Failed to connect to system bus: No such file or directory
+May 18 07:09:42 gobuntu sshd[8291]: Received disconnect from 212.8.2.4 port 45312:11: disconnected by user
+May 18 07:09:42 gobuntu sshd[8291]: Disconnected from user root 212.8.2.4 port 45312
+May 18 07:09:42 gobuntu sshd[8291]: pam_unix(sshd:session): session closed for user root
+May 18 07:09:59 gobuntu sshd[8310]: Accepted publickey for root from 212.8.2.4 port 34465 ssh2: RSA SHA256:sGpdarZ/IrnU9jQqyIGKCmSW87BY84+zMMQMmZY3h2I
+May 18 07:09:59 gobuntu sshd[8310]: pam_unix(sshd:session): session opened for user root by (uid=0)
+May 18 07:09:59 gobuntu sshd[8310]: pam_systemd(sshd:session): Failed to connect to system bus: No such file or directory
+May 18 07:31:18 gobuntu sshd[8310]: pam_unix(sshd:session): session closed for user root
+May 18 15:01:11 gobuntu sshd[26512]: Accepted publickey for root from 212.8.2.4 port 35842 ssh2: RSA SHA256:sGpdarZ/IrnU9jQqyIGKCmSW87BY84+zMMQMmZY3h2I
+May 18 15:01:11 gobuntu sshd[26512]: pam_unix(sshd:session): session opened for user root by (uid=0)
+May 18 15:01:11 gobuntu sshd[26512]: pam_systemd(sshd:session): Failed to connect to system bus: No such file or directory
+May 18 15:01:22 gobuntu sshd[26512]: pam_unix(sshd:session): session closed for user root
+May 19 07:42:23 gobuntu sshd[26655]: Accepted publickey for root from 212.8.2.4 port 36214 ssh2: RSA SHA256:sGpdarZ/IrnU9jQqyIGKCmSW87BY84+zMMQMmZY3h2I
+May 19 07:42:23 gobuntu sshd[26655]: pam_unix(sshd:session): session opened for user root by (uid=0)
+May 19 07:42:23 gobuntu sshd[26655]: pam_systemd(sshd:session): Failed to connect to system bus: No such file or directory
+May 19 07:43:30 gobuntu sshd[26657]: Accepted password for root from 212.8.2.4 port 55979 ssh2
+May 19 07:43:30 gobuntu sshd[26657]: pam_unix(sshd:session): session opened for user root by (uid=0)
+May 19 07:43:30 gobuntu sshd[26657]: pam_systemd(sshd:session): Failed to connect to system bus: No such file or directory
+May 19 07:43:53 gobuntu sshd[26655]: Received disconnect from 212.8.2.4 port 36214:11: disconnected by user
+May 19 07:43:53 gobuntu sshd[26655]: Disconnected from user root 212.8.2.4 port 36214
+May 19 07:43:53 gobuntu sshd[26655]: pam_unix(sshd:session): session closed for user root
+May 19 07:44:01 gobuntu sshd[26885]: Invalid user gonicus from 212.8.2.4 port 28016
+May 19 07:44:05 gobuntu sshd[26885]: pam_unix(sshd:auth): check pass; user unknown
+May 19 07:44:05 gobuntu sshd[26885]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=212.8.2.4 
+May 19 07:44:07 gobuntu sshd[26885]: Failed password for invalid user gonicus from 212.8.2.4 port 28016 ssh2
+May 19 07:44:08 gobuntu sshd[26885]: Failed password for invalid user gonicus from 212.8.2.4 port 28016 ssh2
+May 19 07:44:08 gobuntu sshd[26885]: Connection closed by invalid user gonicus 212.8.2.4 port 28016 [preauth]
+May 19 07:44:10 gobuntu sshd[26888]: Accepted publickey for root from 212.8.2.4 port 52285 ssh2: RSA SHA256:sGpdarZ/IrnU9jQqyIGKCmSW87BY84+zMMQMmZY3h2I
+May 19 07:44:10 gobuntu sshd[26888]: pam_unix(sshd:session): session opened for user root by (uid=0)
+May 19 07:44:10 gobuntu sshd[26888]: pam_systemd(sshd:session): Failed to connect to system bus: No such file or directory
+May 19 07:48:34 gobuntu groupadd[30672]: group added to /etc/group: name=gonicus, GID=1000
+May 19 07:48:34 gobuntu groupadd[30672]: group added to /etc/gshadow: name=gonicus
+May 19 07:48:34 gobuntu groupadd[30672]: new group: name=gonicus, GID=1000
+May 19 07:48:34 gobuntu useradd[30676]: new user: name=gonicus, UID=1000, GID=1000, home=/home/gonicus, shell=/bin/bash
+May 19 07:48:41 gobuntu passwd[30684]: pam_unix(passwd:chauthtok): password changed for gonicus
+May 19 07:48:43 gobuntu chfn[30790]: changed user 'gonicus' information
+May 19 07:48:49 gobuntu sshd[26657]: Received disconnect from 212.8.2.4 port 55979:11: disconnected by user
+May 19 07:48:49 gobuntu sshd[26657]: Disconnected from user root 212.8.2.4 port 55979
+May 19 07:48:49 gobuntu sshd[26657]: pam_unix(sshd:session): session closed for user root
+May 19 07:49:05 gobuntu sshd[26888]: Received disconnect from 212.8.2.4 port 52285:11: disconnected by user
+May 19 07:49:05 gobuntu sshd[26888]: Disconnected from user root 212.8.2.4 port 52285
+May 19 07:49:05 gobuntu sshd[26888]: pam_unix(sshd:session): session closed for user root
+May 21 05:14:34 gobuntu sshd[31138]: Connection closed by 192.168.1.25 port 34644 [preauth]
+May 21 05:14:53 gobuntu sshd[31140]: Accepted password for root from 192.168.1.25 port 34648 ssh2
+May 21 05:14:53 gobuntu sshd[31140]: pam_unix(sshd:session): session opened for user root by (uid=0)
+May 21 05:14:53 gobuntu sshd[31140]: pam_systemd(sshd:session): Failed to connect to system bus: No such file or directory
+May 21 05:14:55 gobuntu sshd[31140]: Received disconnect from 192.168.1.25 port 34648:11: disconnected by user
+May 21 05:14:55 gobuntu sshd[31140]: Disconnected from user root 192.168.1.25 port 34648
+May 21 05:14:55 gobuntu sshd[31140]: pam_unix(sshd:session): session closed for user root
+May 21 05:15:04 gobuntu sshd[31168]: Connection closed by authenticating user root 192.168.1.25 port 34678 [preauth]
+May 21 05:15:04 gobuntu sshd[31170]: Connection closed by authenticating user root 192.168.1.25 port 34680 [preauth]
+May 21 05:15:05 gobuntu sshd[31172]: Connection closed by authenticating user root 192.168.1.25 port 34682 [preauth]
+May 21 05:15:06 gobuntu sshd[31174]: Accepted password for root from 192.168.1.25 port 34684 ssh2
+May 21 05:15:06 gobuntu sshd[31174]: pam_unix(sshd:session): session opened for user root by (uid=0)
+May 21 05:15:06 gobuntu sshd[31174]: pam_systemd(sshd:session): Failed to connect to system bus: No such file or directory
+May 21 05:15:06 gobuntu sshd[31174]: Received disconnect from 192.168.1.25 port 34684:11: disconnected by user
+May 21 05:15:06 gobuntu sshd[31174]: Disconnected from user root 192.168.1.25 port 34684
+May 21 05:15:06 gobuntu sshd[31174]: pam_unix(sshd:session): session closed for user root
+May 21 05:15:09 gobuntu sshd[31193]: Accepted publickey for root from 192.168.1.25 port 34690 ssh2: ED25519 SHA256:hJRgGF/hDEYs/NT1roxwY0uiw7WUoroqSbPZ6VNjyDQ
+May 21 05:15:09 gobuntu sshd[31193]: pam_unix(sshd:session): session opened for user root by (uid=0)
+May 21 05:15:09 gobuntu sshd[31193]: pam_systemd(sshd:session): Failed to connect to system bus: No such file or directory
+May 21 05:23:33 gobuntu useradd[5913]: new group: name=user, GID=1001
+May 21 05:23:33 gobuntu useradd[5913]: new user: name=user, UID=1001, GID=1001, home=/home/user, shell=/bin/bash
+May 21 05:23:33 gobuntu useradd[5913]: add 'user' to group 'sudo'
+May 21 05:23:33 gobuntu useradd[5913]: add 'user' to shadow group 'sudo'
+May 21 05:24:02 gobuntu su[6322]: Successful su for gonicus by root
+May 21 05:24:02 gobuntu su[6322]: + /dev/pts/4 root:gonicus
+May 21 05:24:02 gobuntu su[6322]: pam_unix(su:session): session opened for user gonicus by root(uid=0)
+May 21 05:24:02 gobuntu su[6322]: pam_systemd(su:session): Failed to connect to system bus: No such file or directory
+May 21 05:24:07 gobuntu su[6375]: pam_unix(su:auth): authentication failure; logname=root uid=1000 euid=0 tty=/dev/pts/4 ruser=gonicus rhost=  user=user
+May 21 05:24:09 gobuntu su[6375]: pam_authenticate: Authentication failure
+May 21 05:24:09 gobuntu su[6375]: FAILED su for user by gonicus
+May 21 05:24:09 gobuntu su[6375]: - /dev/pts/4 gonicus:user
+May 21 05:24:19 gobuntu su[6322]: pam_unix(su:session): session closed for user gonicus
+May 21 05:24:24 gobuntu userdel[6647]: delete user 'user' 
+May 21 05:24:24 gobuntu userdel[6647]: delete 'user' from group 'sudo' 
+May 21 05:24:24 gobuntu userdel[6647]: removed group 'user' owned by 'user' 
+May 21 05:24:24 gobuntu userdel[6647]: removed shadow group 'user' owned by 'user' 
+May 21 05:24:24 gobuntu userdel[6647]: delete 'user' from shadow group 'sudo' 
+May 21 05:25:08 gobuntu useradd[7295]: new group: name=user, GID=1001
+May 21 05:25:08 gobuntu useradd[7295]: new user: name=user, UID=1001, GID=1001, home=/home/user, shell=/bin/bash
+May 21 05:25:08 gobuntu useradd[7295]: add 'user' to group 'sudo'
+May 21 05:25:08 gobuntu useradd[7295]: add 'user' to shadow group 'sudo'
+May 21 05:25:15 gobuntu su[7401]: Successful su for user by root
+May 21 05:25:15 gobuntu su[7401]: + /dev/pts/4 root:user
+May 21 05:25:15 gobuntu su[7401]: pam_unix(su:session): session opened for user user by root(uid=0)
+May 21 05:25:15 gobuntu su[7401]: pam_systemd(su:session): Failed to connect to system bus: No such file or directory
+May 21 05:25:16 gobuntu su[7401]: pam_unix(su:session): session closed for user user
+May 21 05:25:19 gobuntu su[7458]: Successful su for gonicus by root
+May 21 05:25:19 gobuntu su[7458]: + /dev/pts/4 root:gonicus
+May 21 05:25:19 gobuntu su[7458]: pam_unix(su:session): session opened for user gonicus by root(uid=0)
+May 21 05:25:19 gobuntu su[7458]: pam_systemd(su:session): Failed to connect to system bus: No such file or directory
+May 21 05:25:22 gobuntu su[7495]: pam_unix(su:auth): auth could not identify password for [user]
+May 21 05:25:22 gobuntu su[7495]: pam_authenticate: Authentication failure
+May 21 05:25:22 gobuntu su[7495]: FAILED su for user by gonicus
+May 21 05:25:22 gobuntu su[7495]: - /dev/pts/4 gonicus:user
+May 21 05:25:24 gobuntu su[7458]: pam_unix(su:session): session closed for user gonicus
+May 21 05:28:52 gobuntu useradd[10516]: failed adding user 'user', data deleted
+May 21 05:28:57 gobuntu userdel[10579]: delete user 'user' 
+May 21 05:28:57 gobuntu userdel[10579]: delete 'user' from group 'sudo' 
+May 21 05:28:57 gobuntu userdel[10579]: removed group 'user' owned by 'user' 
+May 21 05:28:57 gobuntu userdel[10579]: removed shadow group 'user' owned by 'user' 
+May 21 05:28:57 gobuntu userdel[10579]: delete 'user' from shadow group 'sudo' 
+May 21 05:28:58 gobuntu useradd[10594]: new group: name=user, GID=1001
+May 21 05:28:58 gobuntu useradd[10594]: new user: name=user, UID=1001, GID=1001, home=/home/user, shell=/bin/bash
+May 21 05:28:58 gobuntu useradd[10594]: add 'user' to group 'sudo'
+May 21 05:28:58 gobuntu useradd[10594]: add 'user' to shadow group 'sudo'
+May 21 07:32:23 gobuntu groupadd[13656]: group added to /etc/group: name=ntp, GID=106
+May 21 07:32:23 gobuntu groupadd[13656]: group added to /etc/gshadow: name=ntp
+May 21 07:32:23 gobuntu groupadd[13656]: new group: name=ntp, GID=106
+May 21 07:32:24 gobuntu useradd[13661]: new user: name=ntp, UID=105, GID=106, home=/nonexistent, shell=/usr/sbin/nologin
+May 21 07:32:24 gobuntu usermod[13667]: change user 'ntp' password
+May 21 07:32:24 gobuntu chage[13672]: changed password expiry for ntp
+May 21 05:36:54 gobuntu userdel[18064]: delete user 'ntp' 
+May 21 05:36:54 gobuntu userdel[18064]: removed group 'ntp' owned by 'ntp' 
+May 21 05:36:54 gobuntu userdel[18064]: removed shadow group 'ntp' owned by 'ntp' 
+May 21 07:44:49 gobuntu groupadd[25153]: group added to /etc/group: name=ntp, GID=106
+May 21 07:44:49 gobuntu groupadd[25153]: group added to /etc/gshadow: name=ntp
+May 21 07:44:49 gobuntu groupadd[25153]: new group: name=ntp, GID=106
+May 21 07:44:49 gobuntu useradd[25158]: new user: name=ntp, UID=105, GID=106, home=/nonexistent, shell=/usr/sbin/nologin
+May 21 07:44:49 gobuntu usermod[25164]: change user 'ntp' password
+May 21 07:44:49 gobuntu chage[25169]: changed password expiry for ntp
+May 21 07:04:39 gobuntu sshd[31193]: Received disconnect from 192.168.1.25 port 34690:11: disconnected by user
+May 21 07:04:39 gobuntu sshd[31193]: Disconnected from user root 192.168.1.25 port 34690
+May 21 07:04:39 gobuntu sshd[31193]: pam_unix(sshd:session): session closed for user root

@@ -1,0 +1,10 @@
+docker run -d \
+        --name gobuntu-test \
+        --hostname gobuntu-test \
+        --restart unless-stopped \
+        --memory "512M" \
+        --cap-add=NET_ADMIN \
+        --cap-add=NET_RAW \
+        -e TZ=Europe/Berlin \
+        -p 2222:22 \
+        theniwo/gobuntu:latest
