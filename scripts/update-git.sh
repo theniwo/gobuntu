@@ -1,7 +1,8 @@
 #!/bin/bash
-
+cd /root/Settings/Linux/scripts/docker/gobuntu
+function main(){
 	logger -i -t gobuntu "Adding files"
-	git add /root/Settings/Linux/scripts/docker/gobuntu/*
+	git add .
 	  if [ $? -eq 0 ] ; then
 	    logger -i -t gobuntu "Adding files successful"
 	  else
@@ -24,4 +25,5 @@
 	  else
 	    logger -i -t gobuntu "Pushing to git unsuccessful"
 	  fi
-
+}
+main
