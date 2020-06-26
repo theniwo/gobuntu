@@ -1,23 +1,24 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
-	git add .
-	  logger -i -t gobuntu "Adding files"
+	logger -i -t gobuntu "Adding files"
+	git add /root/Settings/Linux/scripts/docker/gobuntu/*
 	  if [ $? -eq 0 ] ; then
 	    logger -i -t gobuntu "Adding files successful"
 	  else
 	    logger -i -t gobuntu "Adding files unsuccessful"
 	  fi
 
+
+	logger -i -t gobuntu "Committing to git"
 	git commit --all -m "Auto commit"
-	  logger -i -t gobuntu "Committing to git"
 	  if [ $? -eq 0 ] ; then
-	    logger -i -t gobuntu "Committing to git success"
+	    logger -i -t gobuntu "Committing to git successful"
 	  else
 	    logger -i -t gobuntu "Committing to git failed"
 	  fi
 
-	git push origin master
-	  logger -i -t gobuntu "Pushing to git"
+	logger -i -t gobuntu "Pushing to git"
+	git push /root/Settings/Linux/scripts/docker/gobuntu origin master
 	  if [ $? -eq 0 ] ; then
 	    logger -i -t gobuntu "Pushing to git successful"
 	  else
