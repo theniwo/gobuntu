@@ -18,7 +18,7 @@
 	  fi
 
 	logger -i -t gobuntu "Pushing to git"
-	git push /root/Settings/Linux/scripts/docker/gobuntu origin master
+	git push origin master
 	  if [ $? -eq 0 ] ; then
 	    logger -i -t gobuntu "Pushing to git successful"
 	  else
