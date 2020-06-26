@@ -8,10 +8,12 @@ WORKDIR /root
 # Run the command inside your image filesystem.
 
 # Install packets
+RUN TZ=Europe/Berlin
 RUN apt-get update
 RUN apt-get upgrade -y
 RUN apt-get install -y apt-utils
-RUN TZ=Europe/Berlin && DEBIAN_FRONTEND=noninteractive apt-get install -y \
+RUN DEBIAN_FRONTEND=noninteractive apt-get install -y \
+bash-completion \
 byobu \
 curl \
 fail2ban \
