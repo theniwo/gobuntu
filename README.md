@@ -21,6 +21,11 @@ docker run -d \
         -v gobuntu_data:/root \
         theniwo/gobuntu:latest
 ```
+*Info*
+- Set the amount of ram to your liking. (128 MB - 256 MB should be plenty)
+- The capacities NET_ADMIN and NET_RAW are needed for fail2ban to work properly
+- Set your timezone in the variable TZ
+- Of course you can change the port, too
 
 ## Connect
 
