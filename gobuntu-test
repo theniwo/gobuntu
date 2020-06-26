@@ -7,6 +7,4 @@ docker run -d \
         --cap-add=NET_RAW \
         -e TZ=Europe/Berlin \
         -p 2223:22 \
-        -v gobuntu-test_data:/root \
-	-v gobuntu-test_logs:/var/log \
         theniwo/gobuntu:latest
