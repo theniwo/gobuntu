@@ -27,7 +27,8 @@ docker run -d \
 - Set the amount of ram to your liking. (128 MB - 256 MB should be plenty)
 - The capacities NET_ADMIN and NET_RAW are needed for fail2ban to work properly
 - Set your timezone and localisation in the variables TZ and LANG respectively.
-- To use your preferred language install it via `apt install language-pack-(en|de|fr|it|es|pt|sv)`\
+- To use your preferred language install it via \
+  `apt install -y language-pack-(en|de|fr|it|es|pt|sv)` \
   See below for supported localisations
 - Of course you can change the port and add volumes, too. :wink:
 
