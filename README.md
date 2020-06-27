@@ -26,10 +26,10 @@ docker run -d \
 *Info*
 - Set the amount of ram to your liking. (128 MB - 256 MB should be plenty)
 - The capacities NET_ADMIN and NET_RAW are needed for fail2ban to work properly
-- Set your timezone and localisation in the variables TZ and LANG and LANGUAGE respectively.
-- To use your preferred language install it via apt `apt install language-pack-(en|de|fr|it|es|pt|sv)`\
+- Set your timezone and localisation in the variables TZ and LANG respectively.
+- To use your preferred language install it via `apt install language-pack-(en|de|fr|it|es|pt|sv)`\
   See below for supported localisations
-- Of course you can change the port and add volumes, too
+- Of course you can change the port and add volumes, too. :wink:
 
 
 ## Connect
@@ -64,7 +64,7 @@ The 18.04 will be left untouched. \
 Additionally there is the unminimized version, that includes most common tools like man etc. \
 that will not be updated regularly either.
 
-- Supported localisations
+**Supported localisations**
   - [x] English
   - [x] German
   - [x] French
@@ -74,24 +74,20 @@ that will not be updated regularly either.
   - [x] Swedish
   - [x] Finnish
 
-- Installed language packs
+**Installed language packs**
   - [x] English
   - [x] German
-  - [ ] French
-  - [ ] Italian
-  - [ ] Spanish
-  - [ ] Portuguese
-  - [ ] Swedish
-  - [ ] Finnish
 
 **TODO**
 
+Nothing in particular
 
 **CONTACT**
 
 [disp@mailbox.org](mailto:disp@mailbox.org)
 
-**Links**
+**LINKS**
 
-[Docker Hub](https://hub.docker.com/repository/docker/theniwo/gobuntu)
+[Docker Hub](https://hub.docker.com/repository/docker/theniwo/gobuntu) \
+
 [Git Hub](https://github.com/theniwo/gobuntu)
