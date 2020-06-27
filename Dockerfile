@@ -19,6 +19,8 @@ curl \
 fail2ban \
 inetutils* \
 iproute2 \
+language-pack-en \
+language-pack-de \
 less \
 locales \
 locate \

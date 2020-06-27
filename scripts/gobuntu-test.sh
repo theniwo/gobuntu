@@ -11,6 +11,5 @@ docker run -d \
         --cap-add=NET_RAW \
         -e TZ=Europe/Rome \
 	-e LANG=it_IT.UTF-8 \
-	-e LANGUAGE=it_IT.UTF-8 \
         -p 2223:22 \
         theniwo/gobuntu:latest
