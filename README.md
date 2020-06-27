@@ -20,7 +20,7 @@ docker run -d \
         -e LANG=en_US.UTF-8 \
         -p 2222:22 \
         -v gobuntu_data:/root \
-	-v gobuntu_logs:/var/log \
+        -v gobuntu_logs:/var/log \
         theniwo/gobuntu:latest
 ```
 *Info*
@@ -90,6 +90,6 @@ that will not be updated regularly either.
 
 **LINKS**
 
-[Docker Hub](https://hub.docker.com/repository/docker/theniwo/gobuntu) \
+[Docker Hub](https://hub.docker.com/repository/docker/theniwo/gobuntu)
 
 [Git Hub](https://github.com/theniwo/gobuntu)
