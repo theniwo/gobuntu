@@ -77,7 +77,6 @@ that will not be updated regularly either.
 
 **Installed language packs**
   - [x] English
-  - [x] German
 
 **TODO**
 
