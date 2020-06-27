@@ -1,15 +1,15 @@
 docker run -d \
-	--name gobuntu \
-	--hostname gobuntu \
+	--name gobuntu-us \
+	--hostname gobuntu-us \
 	--restart unless-stopped \
 	--memory "128M" \
 	--cap-add=NET_ADMIN \
 	--cap-add=NET_RAW \
-	-e TZ=Europe/Berlin \
-	-e LANG=de_DE.UTF-8 \
-	-e LANGUAGE=de_DE.UTF-8 \
-	-e LC_ALL=de_DE.UTF-8 \
-	-p 44287:22 \
+	-e TZ=America/New_York \
+	-e LANG=en_US.UTF-8 \
+	-e LANGUAGE=en_US.UTF-8 \
+	-e LC_ALL=C \
+	-p 2222:22 \
 	-v gobuntu_data:/root \
 	-v gobuntu_logs:/var/log \
 	theniwo/gobuntu:latest

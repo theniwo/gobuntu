@@ -5,7 +5,7 @@ Not for you, just for me ;=)\
 Really. It's just ubuntu with fail2ban and some other tools for testing.
 
 ## Installed Software / Tools
-bash-completion, byobu, cron, curl, fail2ban, inetutils, iproute2, less, locales, lsb_release, net-tools, ntp, openssh-server, screen, sudo, traceroute, tzdata, unattended-upgrades, vim, whois
+bash-completion, byobu, cron, curl, fail2ban, inetutils, iproute2, less, locales, locate, lsb_release, net-tools, ntp, openssh-server, screen, sudo, traceroute, tzdata, unattended-upgrades, vim, whois
 
 ## Usage
 ```
@@ -16,7 +16,9 @@ docker run -d \
         --memory "128M" \
         --cap-add=NET_ADMIN \
         --cap-add=NET_RAW \
-        -e TZ=Europe/Berlin \
+        -e TZ=America/New_York \
+        -e LANG=en_US.UTF-8 \
+        -e LANGUAGE=en_US.UTF-8 \
         -p 2222:22 \
         -v gobuntu_data:/root \
         theniwo/gobuntu:latest
@@ -24,7 +26,7 @@ docker run -d \
 *Info*
 - Set the amount of ram to your liking. (128 MB - 256 MB should be plenty)
 - The capacities NET_ADMIN and NET_RAW are needed for fail2ban to work properly
-- Set your timezone in the variable TZ
+- Set your timezone and localisation in the variables TZ and LANG and LANGUAGE respectively.
 - Of course you can change the port, too
 
 ## Connect

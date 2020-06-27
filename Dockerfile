@@ -8,7 +8,7 @@ WORKDIR /root
 # Run the command inside your image filesystem.
 
 # Install packets
-RUN TZ=Europe/Berlin
+RUN TZ=America/New_York
 RUN apt-get update
 RUN apt-get upgrade -y
 RUN apt-get install -y apt-utils
@@ -21,6 +21,7 @@ inetutils* \
 iproute2 \
 less \
 locales \
+locate \
 net-tools \
 ntp \
 openssh-server \
@@ -60,11 +61,11 @@ RUN sed 's@session\s*required\s*pam_loginuid.so@session optional pam_loginuid.so
 ENV NOTVISIBLE "in users profile"
 RUN echo "export VISIBLE=now" >> /etc/profile
 
-# Set the locale
-RUN sed -i -e 's/# de_DE.UTF-8 UTF-8/de_DE.UTF-8 UTF-8/' /etc/locale.gen && locale-gen
-ENV LANG de_DE.UTF-8
-ENV LANGUAGE de_DE:de
-ENV LC_ALL de_DE.UTF-8
+# Set the locale to us and german
+RUN sed -i -e 's/# de_DE.UTF-8 UTF-8/de_DE.UTF-8 UTF-8/' /etc/locale.gen
+RUN sed -i -e 's/# en_US.UTF-8 UTF-8/en_US.UTF-8 UTF-8/' /etc/locale.gen && locale-gen
+ENV LANG en_US.UTF-8
+ENV LANGUAGE en_US:en:de
 #RUN locale-gen de_DE.UTF-8
 
 # Copy the file from your host to your current location. (This has to be done as the last step before running CMD or ENTRYPOINT)
