@@ -54,10 +54,10 @@ Scrolltext
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Infobox_info_icon.svg/1200px-Infobox_info_icon.svg.png" alt="drawing" width="20"/>
 
-As this image has about 5k pulls until now, I will update the latest version regularly. \
+The latest version will be updated regularly. \
 The 18.04 will be left untouched. \
 Additionally there is the unminimized version, that includes most common tools like man etc. \
-but it will not be updated regularly either.
+that will not be updated regularly either.
 
 **TODO**
 
