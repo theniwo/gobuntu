@@ -9,6 +9,7 @@ docker run -d \
         --memory "128M" \
         --cap-add=NET_ADMIN \
         --cap-add=NET_RAW \
-        -e TZ=Europe/Berlin \
+        -e TZ=Europe/Rome \
+	-e LANG=it_IT.UTF-8 \
         -p 2223:22 \
         theniwo/gobuntu:latest

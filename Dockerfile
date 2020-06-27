@@ -79,7 +79,7 @@ COPY ./content /
 #RUN sed -i -e 's/# sv_SE.UTF-8 UTF-8/sv_SE.UTF-8 UTF-8/' /etc/locale.gen
 #RUN sed -i -e 's/# sv_FI.UTF-8 UTF-8/sv_FI.UTF-8 UTF-8/' /etc/locale.gen
 ENV LANG en_US.UTF-8
-ENV LANGUAGE en:de:fr:it:es:pt:sv
+ENV LANGUAGE fr:it:es:pt:sv:de:en
 RUN locale-gen
 
 # Copy the file from your host to your current location. (This has to be done as the last step before running CMD or ENTRYPOINT)

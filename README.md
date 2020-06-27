@@ -80,7 +80,9 @@ that will not be updated regularly either.
 
 **TODO**
 
-Nothing in particular
+  - [ ] Make a version for arm architecture
+  - [ ] Write multilang starter script
+  - [ ] Clean up Dockerfile
 
 **CONTACT**
 
