@@ -3,10 +3,10 @@ FROM ubuntu:18.04
 
 LABEL maintainer="disp@mailbox.org"
 
-ARG BUILD_DATE
-ARG NAME
+ARG $(date +%Y.%m.%d)
+ARG gobuntu
 ARG VCS_REF
-ARG VERSION
+ARG 1.1
 
 LABEL org.label-schema.schema-version="1.0" \
       org.label-schema.build-date=$BUILD_DATE \
