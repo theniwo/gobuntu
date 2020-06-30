@@ -3,7 +3,7 @@ FROM ubuntu:18.04
 
 LABEL maintainer="disp@mailbox.org"
 
-ARG $(date +%Y.%m.%d)
+ARG 2020
 ARG gobuntu
 ARG VCS_REF
 ARG 1.1
