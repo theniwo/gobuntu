@@ -5,7 +5,7 @@ Not for you, just for me ;=)\
 Really. It's just ubuntu with fail2ban and some other tools for testing.
 
 ## Installed Software / Tools
-bash-completion, byobu, cron, curl, fail2ban, inetutils, iproute2, less, locales, lsb_release, net-tools, ntp, openssh-server, screen, sudo, traceroute, tzdata, unattended-upgrades, vim, whois
+bash-completion, byobu, cron, curl, fail2ban, inetutils, iproute2, language-pack-de, less, locales, locate, lsb_release, net-tools, ntp, openssh-server, screen, sudo, traceroute, tzdata, unattended-upgrades, vim, whois
 
 ## Usage
 ```
@@ -16,20 +16,26 @@ docker run -d \
         --memory "128M" \
         --cap-add=NET_ADMIN \
         --cap-add=NET_RAW \
-        -e TZ=Europe/Berlin \
+        -e TZ=America/New_York \
+        -e LANG=en_US.UTF-8 \
         -p 2222:22 \
         -v gobuntu_data:/root \
+        -v gobuntu_logs:/var/log \
         theniwo/gobuntu:latest
 ```
 *Info*
 - Set the amount of ram to your liking. (128 MB - 256 MB should be plenty)
 - The capacities NET_ADMIN and NET_RAW are needed for fail2ban to work properly
-- Set your timezone in the variable TZ
-- Of course you can change the port, too
+- Set your timezone and localisation in the variables TZ and LANG respectively.
+- To use your preferred language install it via \
+  `apt install -y language-pack-(en|de|fr|it|es|pt|sv)` \
+  See below for supported localisations
+- Of course you can change the port and add volumes, too. :wink:
+
 
 ## Connect
 
-### Per ssh
+### Via ssh
 `ssh root@localhost -p 2222`\
 or \
 `ssh root@$(docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' gobuntu)`
@@ -47,24 +53,43 @@ or \
 ---
 **NOTES**
 <!---
-<pre>
-Scrolltext
-</pre>
+	<pre>
+	Scrolltext
+	</pre>
 -->
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Infobox_info_icon.svg/1200px-Infobox_info_icon.svg.png" alt="drawing" width="20"/>
 
-```
-As this image has about 5k pulls until now, I will update the latest version regularly. The 18.04 will be left untouched.
-Additionally there is the unminimized version, that includes most common tools like man etc. but it will not be updated regularly either.
-```
+The latest version will be updated regularly. \
+The 18.04 will be left untouched. \
+Additionally there is the unminimized version, that includes most common tools like man etc. \
+that will not be updated regularly either.
+
+**Supported localisations**
+  - [x] English
+  - [x] German
+  - [x] French
+  - [x] Italian
+  - [x] Spanish
+  - [x] Portuguese
+  - [x] Swedish
+  - [x] Finnish
+
+**Installed language packs**
+  - [x] English
 
 **TODO**
 
-Actually nothing.
-
+  - [ ] Make a version for arm architecture
+  - [ ] Write multilang starter script
+  - [ ] Clean up Dockerfile
 
 **CONTACT**
 
 [disp@mailbox.org](mailto:disp@mailbox.org)
 
+**LINKS**
+
+[Docker Hub](https://hub.docker.com/repository/docker/theniwo/gobuntu)
+
+[Git Hub](https://github.com/theniwo/gobuntu)
