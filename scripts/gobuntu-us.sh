@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 if docker inspect gobuntu-us >/dev/null 2>&1; then
   docker stop gobuntu-us 2>/dev/null
   docker rm gobuntu-us 2>/dev/null

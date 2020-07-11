@@ -1,5 +1,11 @@
 #!/usr/bin/env bash
 
+FRIENDLYNAME=Gobuntu
+CONTAINERNAME=gobuntu
+DOCKERREPO=theniwo
+DOCKERIMAGE=gobuntu
+DOCKERTAG=latest
+
 function update-git(){
 	echo "Adding all files to HEAD"
 	git add .
@@ -11,13 +17,13 @@ function update-git(){
 
 function update-docker(){
 	echo "Committing to docker hub"
-	docker commit $(docker inspect --format='{{.ID}}' gobuntu) theniwo/gobuntu:latest && docker push theniwo/gobuntu:latest
+	docker commit $(docker inspect --format='{{.ID}}' $CONTAINERNAME) $DOCKERREPO/$DOCKERIMAGE:$DOCKERTAG && docker push $DOCKERREPO/$DOCKERIMAGE:$DOCKERTAG
 	if [ $? -eq 0 ] ; then
-		echo "Gobuntu has commited and automatically pushed to docker hub"
-		logger -i -t gobuntu "Gobuntu has commited and automatically pushed to docker hub"
+		echo "$FRIENDLYNAME has commited and automatically pushed to docker hub"
+		logger -i -t $CONTAINERNAME "$FRIENDLYNAME has commited and automatically pushed to docker hub"
 	else
-		echo "Gobuntu has failed to commit and automatically push to docker hub"
-		logger -i -t gobuntu "Gobuntu has failed to commit and automatically push to docker hub"
+		echo "$FRIENDLYNAME has failed to commit and automatically push to docker hub"
+		logger -i -t $CONTAINERNAME "$FRIENDLYNAME has failed to commit and automatically push to docker hub"
 	fi
 }
 

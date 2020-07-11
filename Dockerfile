@@ -1,13 +1,13 @@
 # Use the official image as a parent image.
 FROM ubuntu:18.04
 
-LABEL maintainer="disp@mailbox.org"
 
 ARG BUILD_DATE
 ARG NAME
 ARG VCS_REF
 ARG VERSION
 
+LABEL maintainer="disp@mailbox.org"
 LABEL org.label-schema.schema-version="1.0" \
       org.label-schema.build-date=$BUILD_DATE \
       org.label-schema.name=$NAME \
