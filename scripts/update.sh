@@ -33,7 +33,7 @@ function update-docker(){
 if [[ $PARAMETER == "--force" ]] || [[ $PARAMETER == "-f" ]]; then
   FORCE=true
   echo forced
-	date +%Y%m%d%H%M > $DIR/$CONTAINERNAME/CHANGEFILE
+	date +%Y%m%d%H%M%S > $DIR/$CONTAINERNAME/CHANGEFILE
 fi
 
 #if [[ $FORCE == true ]]; then
