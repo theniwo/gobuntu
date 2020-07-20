@@ -1,11 +1,12 @@
 #!/usr/bin/env bash
 
-DIR=/root/Settings/Linux/scripts/docker
 FRIENDLYNAME=Gobuntu
 CONTAINERNAME=gobuntu
 DOCKERREPO=theniwo
 DOCKERIMAGE=gobuntu
 DOCKERTAG=latest
+DIR=/root/Settings/Linux/scripts/docker
+PARAMETER="$2"
 
 function update-git(){
 if [[ $FORCE == true ]]; then
@@ -33,11 +34,10 @@ function update-docker(){
 	fi
 }
 
-PARAMETER="$2"
 
 if [[ $PARAMETER == "--force" ]] || [[ $PARAMETER == "-f" ]]; then
   FORCE=true
-	echo forced
+  echo forced
 fi
 
 var="$1"
