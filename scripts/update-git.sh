@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
 
-DIR=/root/Settings/Linux/scripts/docker
 FRIENDLYNAME=Gobuntu
 CONTAINERNAME=gobuntu
 DOCKERREPO=theniwo
 DOCKERIMAGE=gobuntu
 DOCKERTAG=latest
+DIR=/root/Settings/Linux/scripts/docker
 PARAMETER="$1"
 
 if [[ $PARAMETER == "--force" ]] || [[ $PARAMETER == "-f" ]]; then
