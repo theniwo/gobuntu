@@ -10,9 +10,7 @@ PARAMETER="$2"
 
 function update-git(){
 if [[ $FORCE == true ]]; then
-	echo forced1
-	echo $FORCE
-	#date +%Y%m%d%H%M > $DIR/$CONTAINERNAME/CHANGEFILE
+	date +%Y%m%d%H%M > $DIR/$CONTAINERNAME/CHANGEFILE
 fi
 	echo "Adding all files to HEAD"
 	git add .
