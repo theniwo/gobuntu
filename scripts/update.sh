@@ -10,7 +10,6 @@ DOCKERTAG=latest
 function update-git(){
 if $FORCE; then
 	date +%Y%m%d%H%M > $DIR/$CONTAINERNAME/CHANGEFILE
-	echo forced
 fi
 	echo "Adding all files to HEAD"
 	git add .
@@ -46,6 +45,7 @@ PARAMETER="$2"
 
 if [[ $PARAMETER == "--force" ]] || [[ $PARAMETER == "-f" ]]; then
   FORCE=true
+	echo forced
 fi
 
 var="$1"
