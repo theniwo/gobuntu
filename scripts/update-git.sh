@@ -8,8 +8,9 @@ DOCKERIMAGE=gobuntu
 DOCKERTAG=latest
 PARAMETER="$1"
 
-if [[ $PARAMETER == "--force" ]]; then
-echo forced
+if [[ $PARAMETER == "--force" ]] || [[ $PARAMETER == "-f" ]]; then
+  echo forced
+  FORCE=true
 fi
 
 cd $DIR/$CONTAINERNAME
@@ -40,7 +41,7 @@ function main(){
 	    logger -i -t $CONTAINERNAME "Pushing to git unsuccessful"
 	  fi
 }
-#if $FORCE; then
-	#date +%Y%m%d%h%m > $DIR/$CONTAINERNAME/CHANGEFILE
-#fi
+if $FORCE; then
+	date +%Y%m%d%h%m > $DIR/$CONTAINERNAME/CHANGEFILE
+fi
 main
