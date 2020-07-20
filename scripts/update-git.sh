@@ -42,6 +42,6 @@ function main(){
 	  fi
 }
 if $FORCE; then
-	date +%Y%m%d%h%m > $DIR/$CONTAINERNAME/CHANGEFILE
+	date +%Y%m%d%H%M > $DIR/$CONTAINERNAME/CHANGEFILE
 fi
 main
