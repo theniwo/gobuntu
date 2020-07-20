@@ -9,7 +9,8 @@ DOCKERTAG=latest
 
 function update-git(){
 if $FORCE; then
-	date +%Y%m%d%H%M > $DIR/$CONTAINERNAME/CHANGEFILE
+	echo $FORCE
+	#date +%Y%m%d%H%M > $DIR/$CONTAINERNAME/CHANGEFILE
 fi
 	echo "Adding all files to HEAD"
 	git add .
