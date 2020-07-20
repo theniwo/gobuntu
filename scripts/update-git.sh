@@ -1,12 +1,19 @@
 #!/usr/bin/env bash
 
+DIR=/root/Settings/Linux/scripts/docker
 FRIENDLYNAME=Gobuntu
 CONTAINERNAME=gobuntu
 DOCKERREPO=theniwo
 DOCKERIMAGE=gobuntu
 DOCKERTAG=latest
+PARAMETER="$1"
 
-cd /root/Settings/Linux/scripts/docker/$CONTAINERNAME
+if [[ $PARAMETER == "--force" ]]; then
+echo forced
+fi
+
+cd $DIR/$CONTAINERNAME
+
 function main(){
 	logger -i -t $CONTAINERNAME "Adding files"
 	git add .
@@ -33,4 +40,7 @@ function main(){
 	    logger -i -t $CONTAINERNAME "Pushing to git unsuccessful"
 	  fi
 }
+#if $FORCE; then
+	#date +%Y%m%d%h%m > $DIR/$CONTAINERNAME/CHANGEFILE
+#fi
 main
