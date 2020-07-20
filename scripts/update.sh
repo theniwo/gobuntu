@@ -45,7 +45,6 @@ function update-docker(){
 PARAMETER="$2"
 
 if [[ $PARAMETER == "--force" ]] || [[ $PARAMETER == "-f" ]]; then
-  echo forced
   FORCE=true
 fi
 
