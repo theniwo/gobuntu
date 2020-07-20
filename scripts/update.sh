@@ -8,6 +8,10 @@ DOCKERIMAGE=gobuntu
 DOCKERTAG=latest
 
 function update-git(){
+if $FORCE; then
+	date +%Y%m%d%H%M > $DIR/$CONTAINERNAME/CHANGEFILE
+	echo forced
+fi
 	echo "Adding all files to HEAD"
 	git add .
 	echo "Committing git"
@@ -17,7 +21,7 @@ function update-git(){
 }
 
 function update-git-force(){
-	date +%Y%m%d%h%m > $DIR/$CONTAINERNAME/CHANGEFILE
+	date +%Y%m%d%H%M > $DIR/$CONTAINERNAME/CHANGEFILE
 	echo "Adding all files to HEAD"
 	git add .
 	echo "Committing git"
@@ -37,6 +41,13 @@ function update-docker(){
 		logger -i -t $CONTAINERNAME "$FRIENDLYNAME has failed to commit and automatically push to docker hub"
 	fi
 }
+
+PARAMETER="$2"
+
+if [[ $PARAMETER == "--force" ]] || [[ $PARAMETER == "-f" ]]; then
+  echo forced
+  FORCE=true
+fi
 
 var="$1"
 case "$var" in
