@@ -2,16 +2,12 @@
 
 FRIENDLYNAME=Gobuntu
 CONTAINERNAME=gobuntu
-DOCKERREPO=theniwo
 DOCKERIMAGE=gobuntu
+DOCKERREPO=theniwo
 DOCKERTAG=latest
 DIR=/root/Settings/Linux/scripts/docker
 PARAMETER="$1"
 
-if [[ $PARAMETER == "--force" ]] || [[ $PARAMETER == "-f" ]]; then
-  echo forced
-  FORCE=true
-fi
 
 cd $DIR/$CONTAINERNAME
 
@@ -41,7 +37,9 @@ function main(){
 	    logger -i -t $CONTAINERNAME "Pushing to git unsuccessful"
 	  fi
 }
-if $FORCE; then
-	date +%Y%m%d%H%M > $DIR/$CONTAINERNAME/CHANGEFILE
+
+if [[ $PARAMETER == "--force" ]] || [[ $PARAMETER == "-f" ]]; then
+  echo "Forcing Commit"
+  date +%Y%m%d%H%M%S > $DIR/$CONTAINERNAME/CHANGEFILE
 fi
 main
