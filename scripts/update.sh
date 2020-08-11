@@ -36,7 +36,7 @@ case "$var" in
    git)
 	if [[ $PARAMETER == "--force" ]] || [[ $PARAMETER == "-f" ]]; then
 	  echo "Forcing Commit"
-	  date +%Y%m%d%H%M%S > $DIR/$CONTAINERNAME/CHANGEFILE
+	  date +%Y%m%d%H%M%S > $DIR/CHANGEFILE
 	fi
    	update-git
         ;;
