@@ -5,7 +5,7 @@ CONTAINERNAME=gobuntu
 DOCKERREPO=theniwo
 DOCKERIMAGE=gobuntu
 DOCKERTAG=latest
-DIR=/root/Settings/Linux/scripts/docker
+DIR=$HOME/Settings/Linux/scripts/docker/build
 PARAMETER="$2"
 
 function update-git(){
@@ -36,7 +36,7 @@ case "$var" in
    git)
 	if [[ $PARAMETER == "--force" ]] || [[ $PARAMETER == "-f" ]]; then
 	  echo "Forcing Commit"
-	  date +%Y%m%d%H%M%S > $DIR/CHANGEFILE
+	  date +%Y%m%d%H%M%S > $DIR/$CONTAINERNAME/CHANGEFILE
 	fi
    	update-git
         ;;
