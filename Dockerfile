@@ -65,6 +65,10 @@ ENV LANGUAGE de_DE:de
 ENV LC_ALL de_DE.UTF-8
 #RUN locale-gen de_DE.UTF-8
 
+#Final update
+RUN apt-get update
+RUN apt-get dist-upgrade -y
+
 # Copy the file from your host to your current location. (This has to be done as the last step before running CMD or ENTRYPOINT)
 COPY ./content /
 
