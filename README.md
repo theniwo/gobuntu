@@ -1,5 +1,5 @@
 # Gobuntu
-![Docker Cloud Automated build](https://img.shields.io/docker/cloud/automated/theniwo/gobuntu) ![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/theniwo/gobuntu) ![Docker Pulls](https://img.shields.io/docker/pulls/theniwo/gobuntu)
+![Docker Cloud Automated build](https://img.shields.io/docker/cloud/automated/theniwo/gobuntu) ![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/theniwo/gobuntu) ![Docker Pulls](https://img.shields.io/docker/pulls/theniwo/gobuntu) ![Docker Architectures](https://img.shields.io/badge/arch-x86%20%7C%20amd64-informational)
 
 Not for you, just for me ;=)\
 Really. It's just ubuntu with fail2ban and some other tools for testing.
