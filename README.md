@@ -1,5 +1,5 @@
 # Gobuntu
-
+![Docker Cloud Automated build](https://img.shields.io/docker/cloud/automated/theniwo/gobuntu) ![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/theniwo//gobuntu) ![Docker Pulls](https://img.shields.io/docker/pulls/theniwo/gobuntu)
 
 Not for you, just for me ;=)\
 Really. It's just ubuntu with fail2ban and some other tools for testing.
