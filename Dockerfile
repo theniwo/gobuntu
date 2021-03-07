@@ -11,6 +11,7 @@ WORKDIR /root
 RUN apt-get update
 RUN apt-get upgrade -y
 RUN apt-get install -y apt-utils
+RUN apt-get clean
 RUN TZ=Europe/Berlin && DEBIAN_FRONTEND=noninteractive apt-get install -y \
 byobu \
 curl \
