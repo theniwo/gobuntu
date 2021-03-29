@@ -8,36 +8,37 @@ WORKDIR /root
 # Run the command inside your image filesystem.
 
 # Install packets
-RUN apt-get update
-RUN apt-get upgrade -y
-RUN apt-get install -y apt-utils
-RUN apt-get clean
-RUN TZ=Europe/Berlin && DEBIAN_FRONTEND=noninteractive apt-get install -y \
-byobu \
-curl \
-fail2ban \
-inetutils* \
-iproute2 \
-less \
-locales \
-net-tools \
-ntp \
-openssh-server \
-screen \
-sudo \
-traceroute \
-tzdata \
-unattended-upgrades \
-vim \
-whois
+RUN DEBIAN_FRONTEND=noninteractive apt-get update && \
+	DEBIAN_FRONTEND=noninteractive apt-get upgrade -y && \
+	DEBIAN_FRONTEND=noninteractive apt-get install -y \
+	byobu \
+	curl \
+	fail2ban \
+	inetutils* \
+	iproute2 \
+	less \
+	locales \
+	net-tools \
+	ntp \
+	openssh-server \
+	screen \
+	sudo \
+	traceroute \
+	tzdata \
+	unattended-upgrades \
+	vim \
+	whois && \
+	DEBIAN_FRONTEND=noninteractive apt-get clean && \
+	rm -rf /var/lib/apt/lists/* && \
+	rm -rf /var/cache/debconf/*
 
 # Set up timezone
 RUN ln -fs /usr/share/zoneinfo/Europe/Berlin /etc/localtime
 
 # Set up users and passwords
-RUN useradd --user-group --create-home --skel /etc/skel --shell /bin/bash user
-RUN echo 'root:toor' | chpasswd
-RUN echo 'user:userpw' | chpasswd
+RUN useradd --user-group --create-home --skel /etc/skel --shell /bin/bash user && \
+echo 'root:toor' | chpasswd && \
+echo 'user:userpw' | chpasswd
 
 # Set up ssh process
 RUN mkdir /var/run/sshd
@@ -66,9 +67,6 @@ ENV LANGUAGE de_DE:de
 ENV LC_ALL de_DE.UTF-8
 #RUN locale-gen de_DE.UTF-8
 
-#Final update
-RUN apt-get update
-RUN apt-get dist-upgrade -y
 
 # Copy the file from your host to your current location. (This has to be done as the last step before running CMD or ENTRYPOINT)
 COPY ./content /
