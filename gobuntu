@@ -2,7 +2,6 @@ docker run -d \
 	--name gobuntu \
 	--hostname gobuntu \
 	--restart unless-stopped \
-	--memory "128M" \
 	--cap-add=NET_ADMIN \
 	--cap-add=NET_RAW \
 	-e TZ=Europe/Berlin \
